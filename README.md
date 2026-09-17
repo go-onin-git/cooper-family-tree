@@ -5,7 +5,7 @@ Grates Cove, Newfoundland — built from a family genealogy compiled over
 several decades, photographed as typed generation lists and a hand-drawn
 descendant chart.
 
-**[Live site →](#)** _(update this link once GitHub Pages is enabled — see below)_
+**[Live site →](https://go-onin-git.github.io/cooper-family-tree/)**
 
 ## What this is
 
