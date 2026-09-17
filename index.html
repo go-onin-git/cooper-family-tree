@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Cooper Connection — Family Tree</title>
+<meta name="description" content="An interactive family tree tracing the descendants of William &amp; Susannah Cooper of Grates Cove, Newfoundland." />
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/family-chart@0.9.0/dist/styles/family-chart.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero" id="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grates Cove, Newfoundland &middot; est. c. 1841</p>
+    <h1>The Cooper Connection</h1>
+    <p class="lede">
+      Eight generations descended from <strong>William &amp; Susannah Cooper</strong> —
+      compiled from decades of family research, now mapped out so you can wander
+      the branches yourself.
+    </p>
+    <div class="hero-actions">
+      <button id="enter-tree" class="btn btn-primary">Explore the tree →</button>
+      <button id="show-history" class="btn btn-ghost">Read the history</button>
+    </div>
+    <p class="hero-hint">367 people so far · click any card to open it, search any name, drag to explore</p>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">↓</div>
+</header>
+
+<dialog id="history-dialog">
+  <button id="history-close" class="dialog-close" aria-label="Close">&times;</button>
+  <h2>Cooper History</h2>
+  <p>During the past several years I have been endeavoring to establish a family tree on our family, the Coopers' of Grates Cove, Newfoundland. It has been a very long &amp; at times a very frustrating experience; but for the most part it has been very interesting.</p>
+  <p>The objective of my search is not only to determine exactly who we are related to; but also to establish a link to England, Ireland or Wales. Due to fact that I did not begin my search years ago; to date I have been unable to establish this link.</p>
+  <p>It is my understanding that my great-great grandfather was a gentleman by the name of William Cooper. Apparently, Uncle Billy Cooper, as he became to be known arrived in St. John's somewhere between 1825 and 1830. It is believed that he was a stowaway cabin-boy on a vessel which may have sailed from England. Because of his young age (approximately 12–14 years) he was apprehended by the authorities &amp; was placed in an orphanage or some sort of home for wayward boys. I have been told that young William was taken from the home by a gentleman by the name of John Hoskins &amp; eventually ended up in &amp; around Trinity Bay.</p>
+  <p>Through research, I have established the fact that William Cooper of Grates Cove married Susannah Cooper of Lower Island Cove on December 6, 1841. William &amp; Susannah Cooper had 4 children; 2 daughters &amp; 2 sons. It would appear that their first son, Annanias Cooper may have died at a young age as I could find no record of a marriage or offspring. I have been able to determine that their first daughter, Sarah Cooper married Simeon Snelgrove; a second daughter, Darcus Cooper married Josiah Janes; and that my great grandfather, Josiah Cooper married Rosannah Churchill.</p>
+  <p class="closing">And the rest; as they say is history.</p>
+</dialog>
+
+<main id="tree-view" class="tree-view" hidden>
+
+  <div class="toolbar">
+    <button id="back-to-hero" class="icon-btn" title="Back to intro">←</button>
+
+    <div id="search-cont" class="search-cont"></div>
+
+    <div class="toolbar-group">
+      <button id="btn-home" class="icon-btn" title="Center on William Cooper">🏠</button>
+      <button id="btn-orientation" class="icon-btn" title="Toggle layout orientation">⤢</button>
+      <button id="btn-zoom-in" class="icon-btn" title="Zoom in">+</button>
+      <button id="btn-zoom-out" class="icon-btn" title="Zoom out">−</button>
+      <button id="btn-theme" class="icon-btn" title="Toggle dark mode">🌙</button>
+    </div>
+  </div>
+
+  <div class="legend" id="legend"></div>
+
+  <div id="FamilyChart" class="f3"></div>
+
+  <aside id="detail-panel" class="detail-panel">
+    <button id="detail-close" class="dialog-close" aria-label="Close">&times;</button>
+    <div id="detail-content"></div>
+  </aside>
+
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "d3": "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+  }
+}
+</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
