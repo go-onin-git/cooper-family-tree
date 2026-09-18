@@ -124,8 +124,8 @@ function createFamilyChart() {
     .setCardXSpacing(220)
     .setCardYSpacing(130)
     .setSingleParentEmptyCard(false)
-    .setAncestryDepth(4)
-    .setProgenyDepth(3)
+    .setAncestryDepth(10)
+    .setProgenyDepth(10)
 
   const card = chart
     .setCard(f3.CardHtml)
