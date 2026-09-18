@@ -11,6 +11,7 @@ const GEN_LABELS = {
 const ROOT_ID = "p1" // William Cooper, set in data/build.js
 
 let chart, cardComponent, rawData
+let activeGeneration = null
 
 init()
 
@@ -26,11 +27,52 @@ function buildLegend() {
   legend.innerHTML = Object.entries(GEN_LABELS)
     .map(
       ([gen, label]) => `
-      <span class="legend-item" style="background:color-mix(in srgb, ${GEN_COLORS[gen]} 14%, transparent)">
+      <button type="button" class="legend-item" data-gen="${gen}"
+        style="--gen-c:${GEN_COLORS[gen]}; background:color-mix(in srgb, ${GEN_COLORS[gen]} 14%, transparent)"
+        title="Jump to generation ${gen}">
         <span class="legend-swatch" style="background:${GEN_COLORS[gen]}"></span>${label}
-      </span>`
+      </button>`
     )
     .join("")
+
+  legend.querySelectorAll(".legend-item").forEach((btn) => {
+    btn.addEventListener("click", () => focusGeneration(Number(btn.dataset.gen)))
+  })
+}
+
+function focusGeneration(gen) {
+  if (!chart) return
+  const legend = document.getElementById("legend")
+
+  if (activeGeneration === gen) {
+    // Clicking the active generation again clears the focus.
+    activeGeneration = null
+    legend.querySelectorAll(".legend-item").forEach((b) => b.classList.remove("active"))
+    chart.updateTree({ tree_position: "inherit" })
+    return
+  }
+
+  activeGeneration = gen
+  legend.querySelectorAll(".legend-item").forEach((b) => {
+    b.classList.toggle("active", Number(b.dataset.gen) === gen)
+  })
+
+  // Jump to a representative person of that generation — prefer a blood
+  // relative (not someone who married in) so the branch context makes sense.
+  const candidates = rawData.filter((p) => p.data.generation === gen)
+  const target =
+    candidates.find((p) => !p.data.marriedIn) || candidates[0]
+  if (!target) return
+
+  closeDetailPanel()
+  chart.updateMainId(target.id)
+  chart.updateTree({ tree_position: "main_to_middle" })
+}
+
+function clearGenerationFocus() {
+  if (activeGeneration == null) return
+  activeGeneration = null
+  document.querySelectorAll("#legend .legend-item").forEach((b) => b.classList.remove("active"))
 }
 
 function wireHero() {
@@ -111,8 +153,13 @@ function cardInnerHtml(d) {
   const isMain = d.data.main
   const unverified = d.data.data.unverified
 
+  let stateClass = ""
+  if (activeGeneration != null) {
+    stateClass = gen === activeGeneration ? " is-focused" : " is-dimmed"
+  }
+
   return `
-    <div class="fc-card${isMain ? " is-main" : ""}" style="--gen-c:${color}">
+    <div class="fc-card${isMain ? " is-main" : ""}${stateClass}" style="--gen-c:${color}">
       <div class="fc-card-name">${escapeHtml(name)}</div>
       <div class="fc-card-meta">
         <span class="fc-gen-dot"></span>
@@ -123,6 +170,7 @@ function cardInnerHtml(d) {
 }
 
 function onCardClick(e, d) {
+  clearGenerationFocus()
   openDetailPanel(d.data.id)
   chart.updateMainId(d.data.id)
   chart.updateTree({ tree_position: "main_to_middle" })
@@ -135,6 +183,7 @@ function setupSearch() {
       cont: document.getElementById("search-cont"),
       placeholder: "Search a name…",
       onSelect: (id) => {
+        clearGenerationFocus()
         openDetailPanel(id)
         chart.updateMainId(id)
         chart.updateTree({ tree_position: "main_to_middle" })
@@ -145,6 +194,7 @@ function setupSearch() {
 
 function setupToolbar() {
   document.getElementById("btn-home").addEventListener("click", () => {
+    clearGenerationFocus()
     closeDetailPanel()
     chart.updateMainId(ROOT_ID)
     chart.updateTree({ tree_position: "main_to_middle" })
@@ -235,6 +285,7 @@ function openDetailPanel(id) {
 
   content.querySelectorAll("[data-goto]").forEach((el) => {
     el.addEventListener("click", () => {
+      clearGenerationFocus()
       const targetId = el.getAttribute("data-goto")
       openDetailPanel(targetId)
       chart.updateMainId(targetId)
@@ -242,6 +293,7 @@ function openDetailPanel(id) {
     })
   })
   content.querySelector('[data-action="center"]').addEventListener("click", () => {
+    clearGenerationFocus()
     chart.updateMainId(id)
     chart.updateTree({ tree_position: "main_to_middle" })
   })

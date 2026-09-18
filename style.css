@@ -250,7 +250,20 @@ dialog .closing { font-style: italic; color: var(--ink); }
   gap: 0.35rem;
   padding: 0.15rem 0.55rem;
   border-radius: 999px;
-  cursor: default;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font: inherit;
+  color: inherit;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+.legend-item:hover {
+  transform: translateY(-1px);
+  border-color: var(--gen-c, var(--accent));
+}
+.legend-item.active {
+  border-color: var(--gen-c, var(--accent));
+  font-weight: 700;
+  color: var(--ink);
 }
 .legend-swatch {
   width: 9px;
@@ -264,6 +277,18 @@ dialog .closing { font-style: italic; color: var(--ink); }
   width: 100%;
   background: var(--paper);
   position: relative;
+}
+
+/* family-chart draws connector lines with a hardcoded stroke="#fff"
+   attribute — invisible against a light background. A stylesheet rule
+   always wins over a presentation attribute, so this overrides it. */
+.f3 .link {
+  stroke: var(--ink-soft);
+  opacity: 0.6;
+}
+.f3 .link.f3-path-to-main {
+  stroke: var(--accent);
+  opacity: 1;
 }
 
 /* ---------- Custom family-chart cards ---------- */
@@ -290,6 +315,13 @@ dialog .closing { font-style: italic; color: var(--ink); }
 .fc-card.is-main {
   border-width: 3px;
   box-shadow: 0 0 0 4px var(--accent-soft), var(--shadow);
+}
+.fc-card.is-dimmed {
+  opacity: 0.28;
+}
+.fc-card.is-focused {
+  transform: scale(1.04);
+  box-shadow: 0 0 0 3px var(--gen-c, var(--accent)), var(--shadow);
 }
 .fc-card-name {
   font-weight: 600;
