@@ -75,6 +75,10 @@ function clearGenerationFocus() {
   document.querySelectorAll("#legend .legend-item").forEach((b) => b.classList.remove("active"))
 }
 
+function openHistory() {
+  document.getElementById("history-dialog").showModal()
+}
+
 function wireHero() {
   const hero = document.getElementById("hero")
   const treeView = document.getElementById("tree-view")
@@ -87,9 +91,8 @@ function wireHero() {
   document.getElementById("hero-scroll-cue")?.addEventListener("click", enterTree)
   document.querySelector(".hero-scroll-cue")?.addEventListener("click", enterTree)
 
-  document.getElementById("show-history").addEventListener("click", () => {
-    document.getElementById("history-dialog").showModal()
-  })
+  document.getElementById("show-history").addEventListener("click", openHistory)
+  document.getElementById("btn-history").addEventListener("click", openHistory)
   document.getElementById("history-close").addEventListener("click", () => {
     document.getElementById("history-dialog").close()
   })

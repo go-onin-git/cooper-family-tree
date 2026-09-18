@@ -211,6 +211,15 @@ dialog .closing { font-style: italic; color: var(--ink); }
 }
 .icon-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
 
+.nav-history-btn {
+  width: auto;
+  gap: 0.4rem;
+  padding: 0 0.85rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
 .toolbar-group { display: flex; gap: 0.4rem; margin-left: auto; }
 
 .search-cont {
