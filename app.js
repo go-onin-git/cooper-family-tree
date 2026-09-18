@@ -151,7 +151,6 @@ function cardInnerHtml(d) {
   const color = GEN_COLORS[gen] || GEN_COLORS[8]
   const name = d.data.data["first name"] || "Unknown"
   const isMain = d.data.main
-  const unverified = d.data.data.unverified
 
   let stateClass = ""
   if (activeGeneration != null) {
@@ -163,7 +162,7 @@ function cardInnerHtml(d) {
       <div class="fc-card-name">${escapeHtml(name)}</div>
       <div class="fc-card-meta">
         <span class="fc-gen-dot"></span>
-        Gen ${gen}${unverified ? ` <span class="fc-unverified">· unverified</span>` : ""}
+        Gen ${gen}
       </div>
     </div>
   `
@@ -245,12 +244,6 @@ function openDetailPanel(id) {
     ${
       person.data.note
         ? `<p class="detail-note">${escapeHtml(person.data.note)}</p>`
-        : ""
-    }
-
-    ${
-      person.data.unverified
-        ? `<div class="detail-unverified">⚠ This entry (name, spelling, or family placement) is uncertain — the source photo was faded or the record ambiguous here. Worth double-checking against the original documents.</div>`
         : ""
     }
 

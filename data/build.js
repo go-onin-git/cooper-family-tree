@@ -28,7 +28,6 @@ function visitPerson(person, parentIds, generation) {
     },
     rels: {},
   }
-  if (person.unverified) record.data.unverified = true
   if (person.note) record.data.note = person.note
   if (parentIds && parentIds.length) record.rels.parents = parentIds.slice()
   people.push(record)
@@ -52,7 +51,6 @@ function visitPerson(person, parentIds, generation) {
       },
       rels: { spouses: [id] },
     }
-    if (m.spouse.unverified) spouseRecord.data.unverified = true
     if (m.spouse.note) spouseRecord.data.note = m.spouse.note
     people.push(spouseRecord)
     spouseIds.push(spouseId)

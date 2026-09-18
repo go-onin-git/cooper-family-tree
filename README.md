@@ -15,8 +15,8 @@ descendant chart.
 - A search box to jump straight to a name.
 - Generation-based color coding (1st generation = William & Susannah Cooper,
   counting down from there).
-- A detail panel with notes and an "unverified" flag on entries transcribed
-  from faded or ambiguous parts of the source photos.
+- A detail panel with background notes on people where the source
+  documents recorded them.
 
 ## Running it locally
 
@@ -49,21 +49,14 @@ To add, correct, or remove a person:
    ]}
    ```
    A person with no recorded spouse can list `children` directly instead of
-   inside a `marriages` entry. Add `unverified: true` and a `note: "..."` to
-   flag anything uncertain.
+   inside a `marriages` entry. Add a `note: "..."` for any background worth
+   surfacing in the detail panel.
 2. Rebuild the compiled data:
    ```bash
    node data/build.js
    ```
    This regenerates `data/data.json`, which is what the site actually loads.
 3. Refresh the browser.
-
-**This is a first-draft transcription, not a complete or fully verified
-one.** The source photos include ~300 names across generations 5-7 and
-several sections were faded, at an angle, or handwritten. Branches under
-Absalom John Cooper and Abel Churchill Cooper are transcribed in the most
-depth; others may be thinner or have placement guesses. Anything flagged
-`unverified` in the app is worth checking against the original photos.
 
 ## Deploying to GitHub Pages
 

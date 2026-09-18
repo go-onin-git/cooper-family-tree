@@ -273,8 +273,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 4,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -315,8 +314,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -558,8 +556,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -596,8 +593,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 6,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -901,7 +897,6 @@
       "gender": "F",
       "generation": 5,
       "marriedIn": true,
-      "unverified": true,
       "note": "Handwritten addition on original document."
     },
     "rels": {
@@ -918,8 +913,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -936,9 +930,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 4,
-      "unverified": true,
-      "note": "May be a duplicate of Ralph Thomas Cooper's son of the same name — appears in Fourth Generation list as a direct child too; unresolved."
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -1012,8 +1004,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -1257,9 +1248,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 4,
-      "unverified": true,
-      "note": "Name appears twice in source (also as Wilson Cooper's son) — possibly two different people with the same name, common in this family."
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -1487,8 +1476,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -1505,8 +1493,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -1948,8 +1935,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -2877,8 +2863,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -2895,8 +2880,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -2913,8 +2897,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -2931,8 +2914,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -2950,8 +2932,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 3,
-      "marriedIn": true,
-      "note": "Listed as 'Luther, Hanna Maria (Cram)' in one source column — possibly a prior married surname."
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -2967,8 +2948,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -2985,8 +2965,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -3003,8 +2982,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 4,
-      "unverified": true
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -3021,9 +2999,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 4,
-      "unverified": true,
-      "note": "Possible duplicate of Joseph Cooper under Florence Cooper's line — unresolved."
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -3189,8 +3165,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -3311,8 +3286,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -3328,8 +3302,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -3571,8 +3544,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -3588,8 +3560,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -3727,8 +3698,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -3883,8 +3853,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 6,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -3900,8 +3869,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 7,
-      "unverified": true
+      "generation": 7
     },
     "rels": {
       "parents": [
@@ -3918,8 +3886,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -4235,8 +4202,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -4329,8 +4295,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -4565,8 +4530,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -4741,9 +4705,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true,
-      "note": "Alignment to this branch (vs. a Cooper daughter married to a Thistle) is uncertain."
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -4827,8 +4789,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -4933,9 +4894,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true,
-      "note": "Possibly the same as an earlier-generation Mary Susannah — placement uncertain."
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -5153,8 +5112,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 6,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -5355,9 +5313,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true,
-      "note": "Possible duplicate — a Gladys Cooper also appears under William James Cooper's line married to Herman Haines. Unresolved which branch is correct."
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -5509,8 +5465,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -5889,8 +5844,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 4,
-      "unverified": true
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -6255,8 +6209,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -6273,8 +6226,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -6291,8 +6243,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -6309,8 +6260,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -6327,8 +6277,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 4,
-      "unverified": true
+      "generation": 4
     },
     "rels": {
       "parents": [
@@ -6396,8 +6345,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -6413,8 +6361,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -6431,8 +6378,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -6449,8 +6395,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -6476,8 +6421,7 @@
       "avatar": "",
       "gender": "M",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -6662,8 +6606,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -6700,8 +6643,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 5,
-      "unverified": true
+      "generation": 5
     },
     "rels": {
       "parents": [
@@ -6729,8 +6671,7 @@
       "avatar": "",
       "gender": "F",
       "generation": 5,
-      "marriedIn": true,
-      "unverified": true
+      "marriedIn": true
     },
     "rels": {
       "spouses": [
@@ -6821,8 +6762,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -6839,8 +6779,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -6857,8 +6796,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "F",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -6875,8 +6813,7 @@
       "birthday": "",
       "avatar": "",
       "gender": "M",
-      "generation": 6,
-      "unverified": true
+      "generation": 6
     },
     "rels": {
       "parents": [
@@ -6911,7 +6848,6 @@
       "avatar": "",
       "gender": "M",
       "generation": 3,
-      "unverified": true,
       "note": "A son also named Josiah, distinct from his father."
     },
     "rels": {

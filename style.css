@@ -347,11 +347,6 @@ dialog .closing { font-style: italic; color: var(--ink); }
   background: var(--gen-c, var(--accent));
   flex-shrink: 0;
 }
-.fc-unverified {
-  font-size: 0.68rem;
-  color: #a8592f;
-}
-
 /* ---------- Detail panel ---------- */
 
 .detail-panel {
@@ -407,17 +402,6 @@ dialog .closing { font-style: italic; color: var(--ink); }
   font-style: italic;
   line-height: 1.4;
 }
-.detail-unverified {
-  margin-top: 0.9rem;
-  font-size: 0.8rem;
-  padding: 0.5rem 0.7rem;
-  background: #f5e6d8;
-  color: #7a3b1e;
-  border-radius: 8px;
-  line-height: 1.4;
-}
-[data-theme="dark"] .detail-unverified { background: #33261a; color: #e0b48c; }
-
 .detail-actions { margin-top: 1.3rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .detail-actions button {
   font-size: 0.85rem;
